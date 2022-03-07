@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
   <div class="container">
     <div class="calculator">
       <input type="text" placeholder="0" id="outputScreen"> 
@@ -34,29 +35,6 @@
     </div>
 
   </div>
-  
-  <script>
-    let output = document.getElementById("outputScreen");
-
-    function display(num){
-      output.value += num;
-    }
-
-    function Calculate(){
-     try{
-       output.value = eval(output.value);
-     }
-     catch(err){
-        alert("invalid");
-     }
-    }
-
-    function Clear(){
-      output.value = "";
-    }
-    function del(){
-      output.value = output.value.slice(0,-2);
-    }
-  </script>
+  <script src="myScript.js"></script>
 </body>
 </html>
